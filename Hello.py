@@ -9,4 +9,6 @@ cell = sheet["a1"]
 cell = sheet.cell(1, 1)
 
 # Create a for loop
-print(sheet.max_row)
+for row in range(2, sheet.max_row + 1):
+    cell = sheet.cell(row, 3)
+    print(cell.value)
