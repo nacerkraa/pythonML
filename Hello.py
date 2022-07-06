@@ -15,4 +15,5 @@ for row in range(2, sheet.max_row + 1):
     corrected_price_cell = sheet.cell(row, 4)
     corrected_price_cell.value = corrected_price
 
+# save the information on new file
 wb.save('file2.xlsx')
